@@ -1,19 +1,23 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import HelloWorld from './components/HelloWorld'
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-
-function sum(a, b) {
-  return a + b 
-}
-const nome = "Vinícius"
-const idade = 27
   return (
     <div className="App">
       <h1>Olá react!</h1>
       <h2>Alterando o JSX</h2>
-      <p>Olá, {nome}, você tem {idade} anos e a soma dos números é {sum(1,5)} anos</p>
-      <HelloWorld/>
+      <HelloWorld />
+      <SayMyName nome="Vinícius"/>
+      <SayMyName nome="Maria"/>
+      <SayMyName nome="Calanguinha"/>
+      <Pessoa 
+      nome="João"
+      idade="22" 
+      profissao="DEV"
+      foto="https://img.magnific.com/fotos-gratis/bela-foto-de-um-gatinho-branco-de-pelo-curto-britanico_181624-57681.jpg?semt=ais_hybrid&w=740&q=80"
+      />
     </div>
   );
 }
